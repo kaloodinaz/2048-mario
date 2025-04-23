@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="utf-8">
+  <link rel="manifest" href="/manifest.json" />
+	<meta name="theme-color" content="#151515" />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <title>2048 マリオ | MARIO 2048</title>
+  <meta name="description" content="Mario 2048は、マリオの世界と人気パズルゲーム2048が融合した楽しい無料ブラウザゲームです。ブロックをスライドさせてマリオキャラを合体させ、高得点を目指しましょう！">
+  <link href="main.css" rel="stylesheet" type="text/css">
+  <link rel="shortcut icon" href="favicon.ico">
+  <link rel="apple-touch-icon" href="apple-touch-icon.png">
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-status-bar-style" content="black">
+
+  <meta name="HandheldFriendly" content="True">
+  <meta name="MobileOptimized" content="320">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="format-detection" content="telephone=no" />
+
+  <meta property="og:title" content="2048 game mario"/>
+  <meta property="og:site_name" content="2048 マリオ"/>
+  <meta property="og:description" content="Mario 2048 - マリオの世界で2048を楽しもう【無料ブラウザゲーム】"/>
+  <meta property="og:image" content="og_image.png"/>
+</head>
+<body>
+  <script>
+    if('serviceWorker' in navigator) {window.addEventListener('load', () => {navigator.serviceWorker.register('/sw.js')
+    .then(registration => {console.log('Service Worker registered successfully:', registration);})
+    .catch(error => {console.log('Error in Service Worker registration:', error);});});}
+    </script>
+  <div class="container">
+    <div class="heading">
+      <h1 class="title">2048 マリオ</h1>
+      <div class="scores-container">
+        <div class="score-container">0</div>
+        <div class="best-container">0</div>
+      </div>
+    </div>
+
+    <div class="above-game">
+      <p class="game-intro">
+      <a class="restart-button" onclick="javascript:PlaySound('img/itsme.mp3');">ニューゲーム</a>
+      矢印キーでマリオをスライド。似たようなマリオを組み合わせて新しいマリオを作ろう。</p>
+      
+    </div>
+
+    <div class="game-container">
+      <div class="game-message">
+        <p></p>
+        <div class="lower">
+          <!-- <a href="https://kaloodinaz.github.io/2048-pokemon/"class="learn learn-low" target="_blank">2048 Pokemon</a> -->
+	    
+          <a class="retry-button">プレイ・アゲイン</a>
+        </div>
+      </div>
+
+      <div class="grid-container">
+        <div class="grid-row">
+          <div class="grid-cell"></div>
+          <div class="grid-cell"></div>
+          <div class="grid-cell"></div>
+          <div class="grid-cell"></div>
+        </div>
+        <div class="grid-row">
+          <div class="grid-cell"></div>
+          <div class="grid-cell"></div>
+          <div class="grid-cell"></div>
+          <div class="grid-cell"></div>
+        </div>
+        <div class="grid-row">
+          <div class="grid-cell"></div>
+          <div class="grid-cell"></div>
+          <div class="grid-cell"></div>
+          <div class="grid-cell"></div>
+        </div>
+        <div class="grid-row">
+          <div class="grid-cell"></div>
+          <div class="grid-cell"></div>
+          <div class="grid-cell"></div>
+          <div class="grid-cell"></div>
+        </div>
+      </div>
+
+      <div class="tile-container">
+
+      </div>
+    </div>
+    <hr>
+
+    <p class="game-explanation">
+      <strong class="important">プレーの仕方:</strong> 矢印キーでタイルを動かす。同じ数字の2つのタイルが触れると、1つに合体します！
+    </p>
+    <hr>
+    <div class="block block-728"><script type="text/javascript">
+     atOptions = {
+       'key' : 'd1d26e15f7c349fd8e403bb5ea491a31',
+       'format' : 'iframe',
+       'height' : 90,
+       'width' : 728,
+       'params' : {}
+     };
+   </script>
+   <script type="text/javascript" src="//www.highperformanceformat.com/d1d26e15f7c349fd8e403bb5ea491a31/invoke.js"></script></div>
+       <div class="block block-300"><script type="text/javascript">
+     atOptions = {
+       'key' : '0fee57062f9bb330edc13a4e4349876d',
+       'format' : 'iframe',
+       'height' : 250,
+       'width' : 300,
+       'params' : {}
+     };
+   </script>
+   <script type="text/javascript" src="//www.highperformanceformat.com/0fee57062f9bb330edc13a4e4349876d/invoke.js"></script></div>
+   
+<hr>
+
+<h2>Mario 2048 - マリオと2048が融合した中毒性の高い無料パズルゲーム</h2>
+
+  <p>
+    <strong>Mario 2048</strong>は、任天堂の人気キャラクター「スーパーマリオ」と、世界中で愛されるパズルゲーム「2048」が組み合わさった、ユニークで楽しいブラウザゲームです。HTML5技術を使用しており、インストール不要でスマホやパソコンのブラウザからすぐにプレイ可能です。
+  </p>
+
+  <h2>ゲームの遊び方</h2>
+  <p>
+    矢印キーまたはスワイプ操作でマリオのキャラクターが描かれたブロックを動かし、同じキャラクター同士を合体させていきます。合体するたびに新しいキャラに進化し、最終的には<strong>マリオの最強形態</strong>を目指します。
+  </p>
+  <ul>
+    <li>ブロックを上下左右にスライド</li>
+    <li>同じキャラがぶつかると合体して進化</li>
+    <li>できるだけ長くプレイして高スコアを狙おう</li>
+  </ul>
+
+  <h2>特徴</h2>
+  <p>
+    Mario 2048には以下のような魅力的な特徴があります：
+  </p>
+  <ol>
+    <li>レトロなマリオのドット絵が懐かしい！</li>
+    <li>HTML5対応でスマホ・タブレットでも快適に遊べる</li>
+    <li>音楽や効果音もマリオ風でテンションが上がる</li>
+    <li>シンプルだけど奥深いパズル要素</li>
+  </ol>
+
+  <h2>なぜ人気なのか？</h2>
+  <p>
+    元々の2048がシンプルで中毒性の高いゲームであることに加え、<strong>マリオの世界観</strong>が加わることで、懐かしさと新しさが融合した独自の魅力を持っています。2048ファンもマリオファンも、きっと夢中になることでしょう。
+  </p>
+
+  <p>
+    <em>Mario 2048</em>は無料で誰でもプレイできるゲームです。今すぐプレイして、あなたの最高スコアを目指しましょう！
+ 
+<hr>
+
+<div class="evolve">
+  <p class="title">
+     <strong class="title">マリオの進化:</strong> <a href="https://ja.wikipedia.org/wiki/%E3%82%B9%E3%83%BC%E3%83%91%E3%83%BC%E3%83%9E%E3%83%AA%E3%82%AA%E3%83%96%E3%83%A9%E3%82%B6%E3%83%BC%E3%82%BA" rel="noopener" target="_blank">スーパーマリオブラザーズ</a>
+</p>
+   </div><hr>
+<p>
+  この「2048 マリオ」バージョンは、<a target="_blank" href="https://kaloodinaz.github.io/">Kaloo Dinaz</a>によって制作された高速版であり、
+  「非公式の」<a target="_blank" href="https://kaloodinaz.github.io/2048-online/">2048ゲーム</a>を元に
+  <a target="_blank" href="https://github.com/kaloodinaz/">Kaloo Dinaz</a>がクローンとして作成しました。
+</p>
+  </div>
+
+     
+  <script type="text/javascript">
+    function PlaySound(path) {
+      var audioElement = document.createElement('audio');
+      audioElement.setAttribute('src', path);
+      audioElement.play();
+    }
+    </script>
+  <script defer src="main.js"></script>
+  <script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0];if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src="https://platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");</script>
+
+</body>
+</html>
